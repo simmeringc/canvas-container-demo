@@ -1,6 +1,6 @@
 import { getCanvasState } from "../index";
 import { getHoveredCanvasRect } from "./makeCanvasRectsSelectable";
-import { drawAndInitForegroundCanvas } from "./drawAndInitForegroundCanvas";
+// import { drawAndInitForegroundCanvas } from "./drawAndInitForegroundCanvas";
 
 export function makeCanvasRectsDraggable() {
   const canvasState = getCanvasState();

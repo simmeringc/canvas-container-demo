@@ -1,6 +1,6 @@
 import { getCanvasState } from "../index";
 import { CanvasRectObj } from "../classes/CanvasRectObj";
-import { drawAndInitForegroundCanvas } from "./drawAndInitForegroundCanvas";
+// import { drawAndInitForegroundCanvas } from "./drawAndInitForegroundCanvas";
 
 export function createRectAtCanvasCenter() {
   const canvasState = getCanvasState();
