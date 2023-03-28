@@ -2,6 +2,7 @@ import "./style.scss";
 
 import jquery from "jquery"
 window.$ = jquery;
+
 import { CanvasStateObj } from "./classes/CanvasStateObj";
 import { makeCanvasesResizable } from "./functions/makeCanvasResizable";
 import { createRectAtCanvasCenter } from "./functions/createRectAtCanvasCenter";

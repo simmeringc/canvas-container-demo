@@ -20,7 +20,7 @@ export class CanvasStateObj {
         && this.foregroundCanvasRects !== undefined && this.foregroundCanvasRects !== null) {
         resolve(true);
       } else {
-        reject(new Error("CanvasStateObj initialization failed"));
+        reject(new Error("CanvasStateObj isInitialized failed"));
       }
     });
   }

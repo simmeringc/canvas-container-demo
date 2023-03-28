@@ -3,7 +3,7 @@ import { drawForegroundCanvas } from "./drawForegroundCanvas";
 
 
 export function makeCanvasesResizable() {
-  window.addEventListener('resize', setCanvasSize80VP);
+  window.addEventListener("resize", setCanvasSize80VP);
 }
 
 function setCanvasSize80VP() {
