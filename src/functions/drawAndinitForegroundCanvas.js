@@ -1,4 +1,4 @@
-import { getCanvasState } from "../index";
+import { getCanvasState } from "../index.js";
 
 export function drawAndInitForegroundCanvas() {
   const canvasState = getCanvasState();
