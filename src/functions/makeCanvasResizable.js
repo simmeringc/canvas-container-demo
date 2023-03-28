@@ -1,5 +1,5 @@
 import { getCanvasState } from "../index";
-// import { drawAndInitForegroundCanvas } from "./drawAndInitForegroundCanvas";
+import { drawForegroundCanvas } from "./drawForegroundCanvas";
 
 
 export function makeCanvasesResizable() {
@@ -11,5 +11,5 @@ function setCanvasSize80VP() {
   canvasState.resizeCanvasesTo80VP();
   canvasState.centerCanvases();
   canvasState.repositionForegroundRects();
-  // drawAndInitForegroundCanvas();
+  drawForegroundCanvas();
 }

@@ -1,6 +1,6 @@
 import { getCanvasState } from "../index";
 import { getHoveredCanvasRect } from "./makeCanvasRectsSelectable";
-// import { drawAndInitForegroundCanvas } from "./drawAndInitForegroundCanvas";
+import { drawForegroundCanvas } from "./drawForegroundCanvas";
 
 export function makeCanvasRectsDraggable() {
   const canvasState = getCanvasState();
@@ -41,7 +41,7 @@ function handleMakeCanvasRectsDraggableMouseMove(event) {
   if (selectedCanvasRectPositionWithinBounds(foregroundCanvas, selectedCanvasRect, drawX, drawY)) {
     selectedCanvasRect.setXY(drawX, drawY);
   }
-  // drawAndInitForegroundCanvas();
+  drawForegroundCanvas();
 }
 
 function handleMakeCanvasRectsDraggableMouseUp() {

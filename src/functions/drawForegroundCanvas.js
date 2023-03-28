@@ -1,6 +1,6 @@
 import { getCanvasState } from "../index";
 
-export function drawAndInitForegroundCanvas() {
+export function drawForegroundCanvas() {
   const canvasState = getCanvasState();
   const foregroundCanvasContext = canvasState.foregroundCanvasContext;
   canvasState.clearCanvases();
