@@ -3,11 +3,11 @@ import "./style.scss";
 import jquery from "jquery"
 window.$ = jquery;
 import * as bootstrap from "bootstrap"
-import { CanvasStateObj } from "./classes/CanvasStateObj.js";
-import { makeCanvasesResizable } from "./functions/makeCanvasResizable.js";
-import { createRectAtCanvasCenter } from "./functions/createRectAtCanvasCenter.js";
-import { makeCanvasRectsSelectable } from "./functions/makeCanvasRectsSelectable.js";
-import { makeCanvasRectsDraggable } from "./functions/makeCanvasRectsDraggable.js";
+import { CanvasStateObj } from "./classes/CanvasStateObj";
+import { makeCanvasesResizable } from "./functions/makeCanvasResizable";
+import { createRectAtCanvasCenter } from "./functions/createRectAtCanvasCenter";
+import { makeCanvasRectsSelectable } from "./functions/makeCanvasRectsSelectable";
+import { makeCanvasRectsDraggable } from "./functions/makeCanvasRectsDraggable";
 
 let canvasState;
 

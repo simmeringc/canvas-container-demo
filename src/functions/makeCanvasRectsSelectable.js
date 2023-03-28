@@ -1,4 +1,4 @@
-import { getCanvasState } from "../index.js";
+import { getCanvasState } from "../index";
 
 export function makeCanvasRectsSelectable() {
   const canvasState = getCanvasState();

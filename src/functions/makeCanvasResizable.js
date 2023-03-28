@@ -1,5 +1,5 @@
-import { getCanvasState } from "../index.js";
-import { drawAndInitForegroundCanvas } from "./drawAndInitForegroundCanvas.js";
+import { getCanvasState } from "../index";
+import { drawAndInitForegroundCanvas } from "./drawAndInitForegroundCanvas";
 
 
 export function makeCanvasesResizable() {

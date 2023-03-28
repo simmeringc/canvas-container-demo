@@ -1,4 +1,4 @@
-import { getCanvasState } from "../index.js";
+import { getCanvasState } from "../index";
 import { getHoveredCanvasRect } from "./makeCanvasRectsSelectable";
 import { drawAndInitForegroundCanvas } from "./drawAndInitForegroundCanvas";
 
