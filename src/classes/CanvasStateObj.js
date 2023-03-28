@@ -13,7 +13,7 @@ export class CanvasStateObj {
 
   isInitialized() {
     return new Promise ( (resolve, reject) => {
-      if ( this.backgroundCanvas !== undefined && this.backgroundCanvas !== null
+      if (this.backgroundCanvas !== undefined && this.backgroundCanvas !== null
         && this.backgroundCanvasContext !== undefined && this.backgroundCanvasContext !== null
         && this.foregroundCanvas !== undefined && this.foregroundCanvas !== null
         && this.foregroundCanvasContext !== undefined && this.foregroundCanvasContext !== null
