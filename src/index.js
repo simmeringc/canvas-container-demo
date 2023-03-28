@@ -2,7 +2,6 @@ import "./style.scss";
 
 import jquery from "jquery"
 window.$ = jquery;
-import * as bootstrap from "bootstrap"
 import { CanvasStateObj } from "./classes/CanvasStateObj";
 import { makeCanvasesResizable } from "./functions/makeCanvasResizable";
 import { createRectAtCanvasCenter } from "./functions/createRectAtCanvasCenter";
@@ -24,9 +23,9 @@ async function main() {
       makeCanvasRectsSelectable();
       makeCanvasRectsDraggable();
     }).catch((error) => {
-      console.log("CanvasStatObj isInitialized catch");
+      console.log("CanvasStateObj isInitialized catch");
       console.log(`Error: ${error.message}`);
-      alert(`CanvasStatObj isInitialized catch error: ${error.message}`);
+      alert(`CanvasStateObj isInitialized catch error: ${error.message}`);
     })
 }
 
