@@ -41,7 +41,7 @@ function handleMakeCanvasRectsDraggableMouseMove(event) {
   if (selectedCanvasRectPositionWithinBounds(foregroundCanvas, selectedCanvasRect, drawX, drawY)) {
     selectedCanvasRect.setXY(drawX, drawY);
   }
-  drawAndInitForegroundCanvas();
+  // drawAndInitForegroundCanvas();
 }
 
 function handleMakeCanvasRectsDraggableMouseUp() {

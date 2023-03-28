@@ -11,5 +11,5 @@ function setCanvasSize80VP() {
   canvasState.resizeCanvasesTo80VP();
   canvasState.centerCanvases();
   canvasState.repositionForegroundRects();
-  drawAndInitForegroundCanvas();
+  // drawAndInitForegroundCanvas();
 }
