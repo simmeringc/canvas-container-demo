@@ -1,0 +1,41 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+  --bs-body-font-family: "Lato", sans-serif;
+}
+
+.header-bar-text {
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.header-bar-icon {
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+#canvasContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.textured-background {
+  background-color: #EBECF0;
+  opacity: 0.8;
+  background-image: radial-gradient(#2E2E2F 0.5px, #EBECF0 0.5px);
+  background-size: 10px 10px;
+}
+
+#backgroundCanvas {
+  z-index: 1;
+}
+
+#foregroundCanvas {
+  z-index: 2;
+}
+
