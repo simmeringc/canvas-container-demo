@@ -1,11 +1,16 @@
 {
   "name": "canvas-container-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create a responsive DIV with a size equal to 80% of viewport. Create a draggable interactive child element inside, which cannot be dragged outside the parent DIV.\nResults must be uploaded to Github, Gitlab, or another Git service, preserving the assembly pipeline, webpack.config.js/package.json etc.",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +29,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
+    "express": "^4.18.2",
     "jquery": "^3.6.4",
     "popper.js": "^1.16.1"
   }
