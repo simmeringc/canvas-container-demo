@@ -6,18 +6,21 @@ export function makeCanvasRectsDraggable() {
   const canvasState = getCanvasState();
   const foregroundCanvas = canvasState.foregroundCanvas;
   foregroundCanvas.addEventListener("mousedown", handleMakeCanvasRectsDraggableMouseDown);
+  foregroundCanvas.addEventListener("touchstart", handleMakeCanvasRectsDraggableMouseDown);
 }
 
 let selectedCanvasRect;
 let lastMousePos = { x: null, y: null };
 
-function handleMakeCanvasRectsDraggableMouseDown() {
+function handleMakeCanvasRectsDraggableMouseDown(event) {
   const canvasState = getCanvasState();
   const foregroundCanvas = canvasState.foregroundCanvas;
   selectedCanvasRect = getHoveredCanvasRect();
   if (selectedCanvasRect) {
     window.addEventListener("mousemove", handleMakeCanvasRectsDraggableMouseMove);
     window.addEventListener("mouseup", handleMakeCanvasRectsDraggableMouseUp);
+    window.addEventListener("touchmove", handleMakeCanvasRectsDraggableMouseMove);
+    window.addEventListener("touchend", handleMakeCanvasRectsDraggableMouseMove);
     foregroundCanvas.style.cursor = "grabbing";
     $("body").css("cursor", "grabbing");
     $(".header-bar-icon").css("cursor", "grabbing");
@@ -49,6 +52,8 @@ function handleMakeCanvasRectsDraggableMouseUp() {
   const foregroundCanvas = canvasState.foregroundCanvas;
   window.removeEventListener("mousemove", handleMakeCanvasRectsDraggableMouseMove);
   window.removeEventListener("mouseup", handleMakeCanvasRectsDraggableMouseUp);
+  window.removeEventListener("touchmove", handleMakeCanvasRectsDraggableMouseMove);
+  window.removeEventListener("touchend", handleMakeCanvasRectsDraggableMouseMove);
   foregroundCanvas.style.cursor = "grab";
   $("body").css("cursor", "default");
   $(".header-bar-icon").css("cursor", "pointer");
