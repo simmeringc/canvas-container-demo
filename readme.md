@@ -8,7 +8,7 @@ Create a responsive DIV with a size equal to 80% of viewport. Create a draggable
 ## Development Instructions
 1. Clone this repository
 2. Run `npm install`
-3. Run `npm start`
+3. Run `npm run dev`
 4. Open `http://localhost:9000` in your browser
 5. Run `npm run build` to build the app for production or to examine the build output
 6. Run `npm run start` to run the app in production mode on `http://localhost:3000`
