@@ -3,7 +3,7 @@
 
 ## This app completes the task below:
 
-Create a responsive DIV with a size equal to 80% of viewport. Create a draggable interactive child element inside, which cannot be dragged outside the parent DIV.
+- Create a responsive DIV with a size equal to 80% of viewport. Create a draggable interactive child element inside, which cannot be dragged outside the parent DIV.
 
 ## Development Instructions
 1. Clone this repository
