@@ -1,5 +1,5 @@
 # Canvas Container Demo
-- Live Demo: https://canvas-container-demo.herokuapp.com/
+- Must be run locally
 
 ## This app completes the task below:
 
