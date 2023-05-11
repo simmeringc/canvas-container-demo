@@ -16,18 +16,17 @@ export function getCanvasState() {
 }
 
 async function main() {
-  canvasState = new CanvasStateObj();
-  await canvasState.isInitialized()
-    .then(() => {
-      makeCanvasesResizable();
-      createRectAtCanvasCenter();
-      makeCanvasRectsSelectable();
-      makeCanvasRectsDraggable();
-    }).catch((error) => {
-      console.log("CanvasStateObj isInitialized catch");
-      console.log(`Error: ${error.message}`);
-      alert(`CanvasStateObj isInitialized catch error: ${error.message}`);
-    })
+  try {
+    canvasState = new CanvasStateObj();
+    await canvasState.isInitialized()
+    makeCanvasesResizable();
+    createRectAtCanvasCenter();
+    makeCanvasRectsSelectable();
+    makeCanvasRectsDraggable();
+  } catch (error) {
+    console.error(`CanvasStateObj isInitialized catch: ${error.message}`);
+    alert(`CanvasStateObj isInitialized catch error: ${error.message}`);
+  }
 }
 
 $(document).ready(main);
